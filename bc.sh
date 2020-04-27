@@ -1,5 +1,4 @@
 #!/bin/bash
-export DISPLAY=:0
 current_time=$(date +%H)
 if [ "$current_time" -gt 13 ]
 then
