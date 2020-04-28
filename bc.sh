@@ -4,5 +4,5 @@ if [ "$current_time" -gt 13 ]
 then
 	$(google-chrome https://meet.google.com/cus-zpyk-pha?authuser=2)
 else
-	$(google-chrome https://meet.google.com/gnr-uqov-oba?authuser=2)
+	$(google-chrome https://meet.google.com/org-adfn-fts?authuser=2)
 fi
