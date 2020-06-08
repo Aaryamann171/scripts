@@ -1,6 +1,8 @@
 # scripts
-Scripts for various miscellaneous tasks that save me 30 seconds or more!
+Just some scripts to automate various stuff to save 20 seconds or more
 
 ## Contents:
-* **bc.sh** Automatically logs you in to your online class
-* **ttp.sh** Toggles trackpad status 
+* **screenshot** Grabs a screenshot using scrot and moves it to the desired folder
+* **toggletrackpad** Toggles trackpad status 
+* **wifi_rest.py** Python script to reset wifi
+* **polybarstart** Starts the polybar
