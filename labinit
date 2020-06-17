@@ -1,0 +1,6 @@
+#!/usr/bin/bash
+last_file_number=$(ls -td -- */ | head -n 1 | cut -b 5,6)
+d=$(date '+%b%d')
+new_dir_name=lab_`expr $last_file_number + 1`-$d
+mkdir $PWD/$new_dir_name
+echo "Dir created for lab session "`expr $last_file_number + 1`
