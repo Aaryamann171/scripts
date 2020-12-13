@@ -1,0 +1,14 @@
+#!/usr/bin/python3.8
+
+import sys
+import time
+from tqdm import tqdm
+
+t = sys.argv[1]
+
+t = int(t[:-1]) * 60 if t.endswith("m") else int(t)
+
+for i in (b := tqdm(range(t))):
+    b.set_description(f"{t-i} seconds remaining")
+    time.sleep(1)
+print("done")
