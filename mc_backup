@@ -1,7 +1,6 @@
 #!/usr/bin/bash
-mkdir -p ~/minecraft_backups
 dirname=$(date +"%d-%m-%Y")
-subdirname=$(date +"%k:%M:%S")
-mkdir -p ~/minecraft_backups/$dirname/$subdirname
-cp -r ~/.minecraft/saves/* ~/minecraft_backups/$dirname/$subdirname/
-echo "backup created at ${dirname}"
+subdirname=$(date +"%T")
+mkdir -p ~/minecraft_backups/"$dirname"/"$subdirname"
+cp -r ~/.minecraft/saves/* ~/minecraft_backups/"$dirname"/"$subdirname"/
+echo "backup created on ${dirname} at ${subdirname}"
